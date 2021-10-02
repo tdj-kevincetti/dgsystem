@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <style>
+    table,tr,td{
+    border: 0.02px solid white;
+    }
+    body{
+      margin:0;
+    }
+    li{
+     display:flex;
+     flex-wrap:wrap;
+    }
+    textarea,input{
+     flex: 1 1 10em;
+    }
+    label {
+      flex: 0 0 10em;
+	    margin-bottom: 4px;
+    }
+</style>
+</head>
+<body>
+  <div class="person" style="max-width:30em; margin-left:25%;">
+    <ul>
+      <li><label for="a_person">ผู้รับผิดชอบ</label>
+      <input type="text"></li><br>
+      <li><label for="b_person">ผู้ใช้โดยทั่วไป</label>
+      <textarea></textarea></li>
+    </ul>
+    <br style="margin-bottom:10px;">
+    <div class="action" style="text-align:center;">
+    <button>บันทึก</button>
+    <button onclick="window.location.href='resultlocation.html';">ยกเลิก</button>
+  </div>
+</body>
+</html>

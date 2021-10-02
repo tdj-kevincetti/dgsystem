@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+  table,tr,td{
+  border: 0.02px solid white;
+  }
+  body{
+    margin:0;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+<body>
+  <div class="bar" style="display:flex; width: auto; height: 30px; background: rgb(20, 186, 227);">
+    <p style="margin:5px 0;">ระบบจัดการครุภัณฑ์</p>
+    <p style="margin:5px 0;position:absolute;right:55px;">Username</p>
+    <button onclick="window.location.href='/index.html';"class="logout" style="height:30px; background-color:#add8e6;border:none;position: absolute; right:0px; color:white;">Logout</button>
+  </div>
+  <div class="home"><button onclick="window.location.href='/home.html';" style="width:100px;height:30px; margin:3px 0;">หน้าหลัก</button></div>
+  <div class="search" style="text-align:center;">
+    <input type="text">
+    <select name="title">
+      <option value="searchoption">หัวข้อการค้นหา</option>
+      <option value="number">หมายเลขครุภัณฑ์</option>
+      <option value="name">ชื่อครุภัณฑ์</option>
+      <option value="type">ประเภท</option>
+      <option value="group">หมวดหมู่</option>
+    </select>
+    <input type="submit" value="ค้นหา">
+  </div>
+  <br>
+  <div class="dglist" style="text-align:center;">
+    <iframe src="list.html" width="75%" height="auto" style="border:none;"></iframe>
+  </div>
+</body>
+</html>

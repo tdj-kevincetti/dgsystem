@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <style>
+    table,tr{
+      border:0.02px solid black;
+    }
+    td{
+      border-right: 0.02px solid black;
+      text-align: center;
+    }
+    body{
+      margin:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu" style="text-align:center;position:absolute;width:100%;height:30px;border-bottom:1px solid black;">
+    <a href="info.html" style="text-decoration:none; color:black;">ข้อมูลครุภัณฑ์</a> |
+    <a href="dglocation.html" style="text-decoration:none;color:black;">สถานที่ตั้ง</a> |
+    <a href="status.html" style="color:black;">กำหนดสถานะ</a> |
+    <a href="repairhistory.html" style="text-decoration:none; color:black;">ประวัติการซ่อม</a> |
+    <a href="removement.html" style="text-decoration:none; color:black;">การจำหน่าย</a>
+  </div>
+  <br>
+  <div class="list" style="width:80%;position:absolute;height:30px;top:5%;left:15%;">
+    <table>
+      <tr>
+        <td style="width:20%;">วันที่แก้ไข</td>
+        <td style="width:40%;;">สภาพการใช้งาน</td>
+        <td style="width:15%;">ปีที่ชำรุด</td>
+        <td style="width:15%;">ราคาครุภัณฑ์</td>
+        <td style="width:10%; border-right:none;">สถานะครุภัณฑ์</td>
+      </tr>
+      
+      <!--sql required-->
+    </table>
+  </div>
+  <!--อยากให้อยู่ท้ายสุดของตารางตลอดไป แต่ก็ทำไม่ได้ซักที
+    <div class="report" style="margin-top:5px;">
+    <button>ออกรายงาน</button>
+  </div>-->
+  <br style="margin-bottom:50px;">
+  <button onclick="" style="position:absolute; right:1em; bottom:1em;">ออก</button>
+</body>
+</html>

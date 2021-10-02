@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <style>
+    body{
+      margin:0;
+    }
+    label{
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="bar" style="display:flex; width: auto; height: 30px; background: rgb(20, 186, 227);">
+    <p style="margin:5px 0;">ระบบจัดการครุภัณฑ์</p>
+    <p style="margin:5px 0;position:absolute;right:55px;">Username</p>
+    <button onclick="window.location.href='index.html';"class="logout" style="height:30px; background-color:#add8e6;border:none;position: absolute;  right:0px; color:white;">Logout</button>
+  </div>
+  <div class="reg" style="width:95%; margin:5px 2.5%;border:1px solid black">
+    <div class="regtitle" style="background-color:blue; border:1px solid black">
+      <p style="text-align:center; color:white; margin:0;">ลงทะเบียนครุภัณฑ์</p>
+    </div>
+    <br style="margin-bottom:1px;">
+    <form style="text-align:left; margin:10px 50px;">
+      <label for="number">หมายเลขครุภัณฑ์</label>
+      <input type="text"><br style="margin-bottom:15px;">
+      <label for="gr">หมวดหมู่</label>
+      <select>
+        <option value="select">เลือกหมวดหมู่ของครุภัณฑ์</option>
+      </select>
+      <label for="type">ประเภท</label>
+      <select>
+        <option value="select">เลือกประเภทของครุภัณฑ์</option>
+      </select>
+      <br style="margin-bottom:15px;">
+      <label for="name">ชื่อครุภัณฑ์</label>
+      <input type="text">
+      <br style="margin-bottom:15px;">
+      <label for="detail">รายละเอียด</label>
+      <textarea></textarea>
+      <br style="margin-bottom:15px;">
+      <label for="price">ราคา</label>
+      <input type="text"> บาท
+      <br style="margin-bottom:15px;">
+      <label for="buyfrom">ซื้อมาจาก</label>
+      <input type="text">
+      <br style="margin-bottom:15px;">
+      <label for="buydate">วันที่ซื้อ</label>
+      <input type="date">
+      <br style="margin-bottom:15px;">
+      <label for="condition">สภาพการใช้งาน</label>
+      <select>
+        <option value="con">เลือกสภาพการใช้งาน</option>
+      </select>
+      <br style="margin-bottom:15px;">
+      <label for="status">สถานะครุภัณฑ์</label>
+      <select>
+        <option value="con">เลือกสถานะครุภัณฑ์</option>
+      </select>
+      <br style="margin-bottom:50px;">
+      <button style="position:absolute; bottom:250px;right:10%;">ยืนยัน</button>
+      <button style="position:absolute; bottom:250px;right:5%;">ยกเลิก</button>
+    </form>
+  </div>
+</body>
+</html> 

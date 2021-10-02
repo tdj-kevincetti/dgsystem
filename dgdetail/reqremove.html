@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <style>
+    body{
+      margin:0;
+    }
+    li{
+      display:flex;
+      flex-wrap:wrap;
+    }
+    textarea,input{
+      flex: 1 1 10em;
+    }
+    label {
+      flex: 0 0 8em;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bar" style="display:flex; width: auto; height: 30px; background: rgb(20, 186, 227);">
+    <p style="margin:5px 0;">ระบบจัดการครุภัณฑ์</p>
+    <p style="margin:5px 0;position:absolute;right:55px;">Username</p>
+    <button onclick="window.location.href='index.html';"class="logout" style="height:30px; background-color:#add8e6;border:none;position: absolute; right:0px; color:white;">Logout</button>
+  </div>
+  <div class="reqremove" style="width:95%; margin:1% 2.5%;border:1px solid black">
+    <div class="titlebar" style="background:green; border:1px solid black; height:30px;">
+      <p style="margin-top:5px; padding:0; text-align:center; color:white;">การแจ้งจำหน่าย</p>
+    </div>
+    <div class="editlocate" style="position:absolute;top:15%;left:37.5%">
+    <ul>
+      <li><label for="dgno">หมายเลขครุภัณฑ์</label>
+        <input type="text" disabled>
+      </li>
+      <br>
+      <li><label for="reqrepairno">หมายเลขการแจ้งจำหน่าย</label>
+        <input type="text" disabled>
+      </li>
+      <br>
+      <li><label for="reqrepairdate">วันที่แจ้งจำหน่าย</label>
+        <input type="text" disabled>
+      </li>
+    </ul>
+  </div>
+  <button>บันทึก</button>
+  <button>ยกเลิก</button>
+  
+</body>
+</html> 

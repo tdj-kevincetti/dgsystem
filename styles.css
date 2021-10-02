@@ -1,0 +1,16 @@
+.form{
+  text-align: center;
+  padding: 10px;
+}
+button{
+  width: 100px;
+  height: 30px;
+}
+body{
+  margin: 0%;
+  width:100%;
+  height:65%;
+}
+.login{
+  margin: 15% 0 0 25%;
+}

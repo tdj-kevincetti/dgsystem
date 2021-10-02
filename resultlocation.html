@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+  table,tr,td{
+    border: 0.02px solid white;
+  }
+  body{
+    margin:0;
+  }
+  li{
+     display:flex;
+     flex-wrap:wrap;
+  }
+  select,input,textarea{
+    margin-left:10px;
+    flex: 1 1 15em;
+  }
+  label {
+    flex: 0 0 5em;
+	  margin-right: 1em;
+	  margin-bottom: 4px;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="person" style="text-align:center;max-width:30em;margin-left:25%;">
+    <ul>
+      <li><label for="a_person">ผู้รับผิดชอบ</label>
+        <input type="text" disabled>
+      </li><br>
+      <li><label for="b_person">ผู้ใช้โดยทั่วไป</label>
+        <textarea disabled></textarea>
+        <button onclick="window.location.href='editperson.html'" style="height:2em;position:absolute;right:25%;">แก้ไข</button>
+      </li>
+    </ul>
+  </div>
+  <div class="dglist" style="text-align:center;">
+    <iframe src="list.html" width="100%" height="auto" style="border:none;" alt="ตาราง"></iframe>
+  </div>
+</body>
+</html>

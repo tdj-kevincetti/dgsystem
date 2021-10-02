@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <style>
+    body{
+      margin:0;
+   }
+    li{
+      display:flex;
+      flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    select{
+     flex: 0 0 20em;
+    }
+    input{
+      flex: 0 0 19.5em;
+    }
+    label {
+      flex: 0 0 8em;
+	    margin-bottom: 4px;
+    }
+    ul{
+      position:relative;
+      padding:0;
+      margin-left:30%;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu" style="text-align:center;position:absolute;width:100%;height:40px;border-bottom:1px solid black;">
+    <a href="info.html" style="text-decoration:none; color:black;">ข้อมูลครุภัณฑ์</a> |
+    <a href="dglocation.html" style="text-decoration:none;color:black;">สถานที่ตั้ง</a> |
+    <a href="status.html" style="color:black;">กำหนดสถานะ</a> |
+    <a href="repairhistory.html" style="text-decoration:none; color:black;">ประวัติการซ่อม</a> |
+    <a href="removement.html" style="text-decoration:none; color:black;">การจำหน่าย</a>
+  </div>
+  <br style="margin-top:3%;">
+    <ul>
+      <li><label for="usability">สภาพการใช้งาน</label>
+        <select disabled>
+          <option value=""></option>
+        </select>
+      </li>
+      
+      <li><label for="brokenyear">ปีที่ชำรุด</label>
+        <select disabled>
+          <option value=""></option>
+        </select>
+      </li>
+      
+      <li>
+        <label for="price">ราคาครุภัณฑ์</label>
+        <input type="text" disabled>
+      </li>
+      
+      <li>
+        <label for="dgstatus">สถานะครุภัณฑ์</label>
+        <select disabled>
+          <option value=""></option>
+        </select>
+      </li>
+    </ul>
+  
+  <button style="margin-top:2%;margin-left:48%" onclick="window.location.href='editstatus.html'">แก้ไข</button>
+  <button onclick="window.location.href='edithistory.html'" style="position:absolute;top:80%;left:1%;">ประวัติ</button>
+  <button onclick="" style="position:absolute; right:1%; top:80%;">ออก</button>
+</body>
+</html>
