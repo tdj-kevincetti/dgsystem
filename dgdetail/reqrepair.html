@@ -20,17 +20,19 @@
         margin-bottom: 4px;
       }
       br{
-        margin-bottom: 2px;
+        margin-bottom: 6px;
       }
     </style>
   </head>
   <body>
-    <div class="menu" style="text-align:center;position:relative;width:100%;height:40px;border-bottom:1px solid black;">
-      <a href="info.html" style="text-decoration:none; color:black;">ข้อมูลครุภัณฑ์</a> |
-      <a href="dglocation.html" style=" text-decoration:none; color:black;">สถานที่ตั้ง</a> |
-      <a href="status.html" style="text-decoration:none; color:black;">กำหนดสถานะ</a> |
-      <a href="repairhistory.html" style=" color:black;">ประวัติการซ่อม</a> |
-      <a href="removement.html" style="text-decoration:none;color:black;">การจำหน่าย</a>
+    <div class="bar" style="display:flex; width: 100%; height: 30px; background: rgb(20, 186, 227);">
+      <p style="margin:5px 0;">ระบบจัดการครุภัณฑ์</p>
+      <p style="margin:5px 0;position:absolute;right:55px;">Username</p>
+      <button onclick="window.location.href='./index.html';"class="logout" style="height:30px; background-color:#add8e6;border:none;position: absolute; right:0px; color:white;">Logout</button>
+      </div>
+    <div class="info" style="width:95%; margin:1% 2.5%;border:1px solid black">
+      <div class="infotitle" style="background:blue; border:1px solid black; height:30px;">
+        <p style="margin-top:5px; padding:0; text-align:center; color:white;">การแจ้งซ่อม</p>
     </div>
     <div class="editlocate" style="width:30%;margin:0 auto;">
       <ul style="padding:0;">
@@ -57,11 +59,13 @@
         <li><label for="repairlocation">สถานที่ซ่อม</label>
           <input type="text" disabled>
         </li>
+        <br>
+        <div class="saverepair" style="position:relative;left:46%;top:55%">
+          <button>บันทึก</button>
+          <button>ยกเลิก</button>
+        </div>
       </ul>
+      
     </div>
-    <div class="saverepair" style="position:fixed;left:47.5%;">
-    <button>บันทึก</button>
-    <button>ยกเลิก</button>
-</div>
   </body>
 </html>
