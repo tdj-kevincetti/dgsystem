@@ -7,3 +7,10 @@ body{
   height: 30px; 
   background: rgb(20, 186, 227);
 }
+.logout{
+  height:30px; background-color:#add8e6;
+  border:none;
+  position: absolute; 
+  right:0px; 
+  color:white;
+}
